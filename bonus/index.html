@@ -11,7 +11,7 @@
 
     <main id="app">
         <ul v-bind:class=" arrayEmail.length==10?'d_block':'d_none' ">
-            <li v-for="mail in arrayEmail">{{mail}}</li>
+            <li v-for="(mail, index) in arrayEmail">{{index + 1}} - {{mail}}</li>
         </ul>
     </main>
 
