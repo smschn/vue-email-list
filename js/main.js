@@ -9,12 +9,10 @@ var app = new Vue ({
     mounted() {
         for (let i = 0; i < 10; i++) {
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .then( response => {
-                console.log(response);
+            .then( response => {    // response posso chiamarlo come voglio
                 this.arrayEmail.push(response.data.response);
             })
         }
-        console.log(this.arrayEmail);
     }
 
 })
