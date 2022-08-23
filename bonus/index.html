@@ -10,7 +10,7 @@
 <body>
 
     <main id="app">
-        <ul v-bind:class=" arrayEmail.length==10?'d_block':'d_none' ">
+        <ul v-bind:class=" arrayEmail.length==10?'d_block':'d_none' "> <!-- Oppure al posto di v-bind:, uso v-if=" arrayEmail.length==10 " -->
             <li v-for="(mail, index) in arrayEmail">{{index + 1}} - {{mail}}</li>
         </ul>
     </main>
